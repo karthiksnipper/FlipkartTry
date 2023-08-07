@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-24T11:57:48.251Z",
+        "line": 3,
+        "name": "Existing customer place the order and remove product from CART",
+        "description": "",
+        "id": "verifying-flipkart-orders;existing-customer-place-the-order-and-remove-product-from-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the flipkart App",
+            "match": {
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.launch_the_flipkart_App()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Search the product \"redmi note 11 pro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"redmi note 11 pro\"",
+                  "offset": 19
+                }
+              ],
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.search_the_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Select the product and add to cart \"600020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"600020\"",
+                  "offset": 35
+                }
+              ],
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.select_the_product_and_add_to_cart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Place order, Select payment mode, Select delivery address",
+            "match": {
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.place_order_Select_payment_mode_Select_delivery_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the item on the Cart \"Redmi Note 11 PRO Plus 5G (PHANTOM WHITE, 256 GB)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Redmi Note 11 PRO Plus 5G (PHANTOM WHITE, 256 GB)\"",
+                  "offset": 30
+                }
+              ],
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.validate_the_item_on_the_Cart(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Remove the product from Cart",
+            "match": {
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.remove_the_product_from_Cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate the message \"Your cart is empty!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your cart is empty!\"",
+                  "offset": 21
+                }
+              ],
+              "location": "mock.stepdefinition.RemoveItemStepDefintions.validate_the_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Flipkart Orders",
+    "description": "",
+    "id": "verifying-flipkart-orders",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AddAndRemovefromcart.feature",
+    "tags": []
+  }
+]
